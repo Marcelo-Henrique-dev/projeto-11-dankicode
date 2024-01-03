@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 body{
     background-color: rgb(225, 225, 225);
@@ -78,6 +79,33 @@ header > .container{
     display: flex;
     gap: 20px;
 }
+.depoimentos{
+    padding: 30px 0;
+}
+.depoimentos > .container{
+    gap: 20px;
+    display: flex;
+}
+.depoimento-single{
+    margin-bottom: 10px;
+    background-color: white;
+    background-image: url('../img/quote.png');
+    background-size: 40px 30px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    width: 50%;
+    padding: 30px;
+}
+.depoimento-single p{
+    font-weight: bold;
+    color: black;
+    font-size: 13px;
+}
+.depoimento-single span{
+    color: #30851d;
+    font-weight: bold;
+    font-size: 15px;
+}
 
 @media (max-width: 768px){
     .topo .container{
@@ -101,5 +129,11 @@ header > .container{
     }
     .img-topo img{
         width: 80%;
+    }
+    .depoimentos > .container{
+        flex-wrap: wrap;
+    }
+    .depoimento-single{
+        width: 100%;
     }
 }
