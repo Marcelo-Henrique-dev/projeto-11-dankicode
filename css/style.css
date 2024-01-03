@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
+    outline: 0;
 }
 body{
     background-color: rgb(225, 225, 225);
@@ -106,6 +107,146 @@ header > .container{
     font-weight: bold;
     font-size: 15px;
 }
+.sobre{
+    padding: 20px;
+}
+.title-sobre h2{
+    color: black;
+    padding-bottom: 20px;
+    border-bottom: 3px solid #30851d;
+    text-align: center;
+}
+.sobre-wraper{
+    display: flex;
+    gap: 30px;
+}
+.sobre-single{
+    width: 33.3%;
+    margin-top: 20px;
+    background-color: #ccc;
+}
+.title-single{
+    display: flex;
+}
+.title-single i{
+    background-color: #30851d;
+    width: 20%;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    line-height: 60px;
+}
+.title-single h3{
+    color: black;
+    background-color: white;
+    width: 80%;
+    padding: 20px 30px;
+    margin: 0;
+}
+.sobre-content{
+    padding: 20px;
+}
+.galeria > .container{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    justify-content: center;
+}
+.galeria img{
+    border: 3px solid #30851d;
+}
+.galeria .img-big{
+    width: 60%;
+}
+.img-big img{
+    height: 100%;
+    width: 100%;
+}
+.galeria .imgs{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.download-links{
+    background-color: #30851d;
+}
+.part1{
+    width: 80%;
+}
+.download-links > .container{
+    padding: 30px;
+    display: flex;
+    gap: 30px;
+}
+.download-links h2{
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 0;
+}
+.line{
+    padding: 0.8px;
+    background-color: white;
+    width: 100px;
+}
+.download-links p{
+    color: white;
+    padding: 30px 0;
+    line-height: 30px;
+    text-align: justify;
+    font-weight: lighter;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links a i{
+    font-size: 40px;
+    margin-right: 10px;
+}
+.links a span{
+    display: none;
+}
+.links a{
+    color: #fff;
+    font-size: 30px;
+    text-decoration: none;
+}
+.part2{
+    border-left: 1px solid white;
+    padding: 30px;
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+footer{
+    background-color: #effeee;
+}
+footer > .container{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .social a{
+    color: gray;
+    font-size: 22px;
+    margin: 0 15px;
+}
+footer p{
+    color: #30851d;
+    font-weight: bold;
+}
+
+@media (max-width: 1024px){
+    .part2{
+        display: none;
+    }
+    .download-links .container{
+        justify-content: center;
+    }
+}
 
 @media (max-width: 768px){
     .topo .container{
@@ -135,5 +276,46 @@ header > .container{
     }
     .depoimento-single{
         width: 100%;
+    }
+    .sobre-wraper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .sobre-single{
+        width: 80%;
+    }
+    .links{
+        flex-direction: column;
+    }
+    footer img{
+        display: none;
+    }
+    .galeria .container{
+        flex-wrap: wrap;
+    }
+    .img-big{
+        width: 100%!important;
+    }
+    .imgs{
+        width: 100%!important;
+    }
+}
+
+@media (max-width: 549px){
+    .menu ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .btn-cta{
+        margin-top: 30px;
+    }
+    header{
+        padding: 30px 0;
+    }
+    footer p{
+        display: none;
+    }
+    footer .container{
+        justify-content: center;
     }
 }
