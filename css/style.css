@@ -10,7 +10,7 @@ body{
 }
 .container{
     width: 100%;
-    max-width: 960px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 2%;
 }
@@ -42,4 +42,64 @@ header > .container{
     background-color: #30851d;
     color: white !important;
     font-weight: 500;
+}
+.w50{
+    width: 50%;
+}
+.topo{
+    background-color: white;
+    padding: 30px 0;
+}
+.topo > .container{
+    display: flex;
+    gap: 10px;
+}
+.img-topo{
+    max-width: 100%;
+    text-align: center;
+}
+.img-topo > img{
+    width: 100%;
+}
+.texto-topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.texto-topo h2{
+    font-size: 35px;
+}
+.texto-topo p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: lighter;
+}
+.downloads{
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+    .topo .container{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .downloads{
+        justify-content: center;
+    }
+    .texto-topo{
+        gap: 20px;
+    }
+    .texto-topo p{
+        text-align: justify;
+    }
+    .w50{
+        width: 100% !important;
+    }
+    .img-topo img{
+        width: 80%;
+    }
 }
